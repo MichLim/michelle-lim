@@ -1,0 +1,20 @@
+
+
+header h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.nav-pills {
+    /* background-color: #ffffff; Change the background color */
+}
+
+.nav-item {
+    margin: 10px; /* Change the spacing between pill items */
+}
+
+.nav-link {
+    color: #000000; /* Change the text color of pill items */
+}
