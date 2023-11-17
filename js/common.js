@@ -1,3 +1,5 @@
+// common.js
+
 function includeNavbar() {
     document.write(`
         <header>
@@ -14,9 +16,10 @@ function includeNavbar() {
 }
 
 function includeFooter() {
-    document.write('
+    document.write(`
         <footer>
             <p>&copy; 2023 Michelle Lim</p>
         </footer>
-    ');
+    `);
 }
+
