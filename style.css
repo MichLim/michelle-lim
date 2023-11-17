@@ -1,20 +1,38 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
 
-header h1 {
+header {
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    font-weight: bold;
-    font-size: 2em;
-    margin-top: 20px;
+    padding: 20px;
 }
 
-.nav-pills {
-    /* background-color: #ffffff; Change the background color */
-}
-
-.nav-item {
-    margin: 10px; /* Change the spacing between pill items */
+nav {
+    background-color: #eee;
+    padding: 10px;
 }
 
 .nav-link {
-    color: #000000; /* Change the text color of pill items */
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Add some spacing between sections */
+section {
+    margin-bottom: 20px;
 }
