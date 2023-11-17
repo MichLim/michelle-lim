@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <!-- Your existing meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Michelle Lim</title>
+    
+    <!-- Your existing stylesheet and script references -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Update the reference to common.js to reflect the new folder structure -->
+    <script src="js/common.js"></script>
 </head>
 <body>
-    <nav class="nav nav-pills justify-content-center">
-        <a class="nav-item nav-link" data-toggle="pill" href="#about.html">About Me</a>
-        <a class="nav-item nav-link" data-toggle="pill" href="#projects.html">Projects</a>
-        <a class="nav-item nav-link" data-toggle="pill" href="#contact.html">Contact</a>
-        <a class="nav-item nav-link" data-toggle="pill" href="#fun.html">Fun Stuff</a>
-    </nav>
 
-    <div class="container">
-        <h1>About Me</h1>
-        <p>
-            This is where you can introduce yourself. You can talk about your background, your interests, and any other relevant information.
-        </p>
+    <!-- Call the includeNavbar function to load the navigation bar -->
+    <script>includeNavbar();</script>
 
-        <!-- You can add more content here, such as a photo, additional paragraphs, or lists -->
-    </div>
+    <!-- Your about page content goes here -->
+    <section>
+        <h2>About Me</h2>
+        <!-- Add your about me content here -->
+    </section>
 
-    <script src="js/script.js"></script> <!-- Link to your JavaScript file, if needed -->
+    <!-- Your existing script reference -->
+    <script src="js/script.js"></script>
 </body>
 </html>
