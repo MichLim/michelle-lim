@@ -1,9 +1,28 @@
 /* style.css */
 
+header {
+    text-align: center;
+}
+
 body {
     background-color: #4b4b4b; /* Light gray background */
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
 }
 
-/* Other styles as needed */
+/* Add a background color for the active link */
+.nav-item.active {
+    background-color: #007bff; /* Blue color, you can adjust this */
+    color: #fff; /* Text color for better visibility */
+}
+
+/* Add a background color for the hover effect */
+.nav-item.nav-link:hover {
+    background-color: #cfe2ff; /* Light blue color, you can adjust this */
+    color: #007bff; /* Text color for better visibility */
+}
+
+
+footer {
+    text-align: center;
+}
