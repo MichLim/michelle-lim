@@ -2,12 +2,63 @@
 
 header {
     text-align: center;
+    padding: 20px;
+    
+}
+
+/* Remove default link styling for the header */
+header h1 a {
+    color: inherit; /* Use the default text color */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Add styling for the active link */
+header h1 a:hover,
+header h1 a:active {
+    text-decoration: underline; /* Add underline on hover and active states */
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #4b4b4b; /* Light gray background */
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    min-height: 100vh;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+}
+
+
+/* About page */
+
+/* Style for the container */
+.about-content {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order of the flex items (image and text) */
+}
+
+/* Style for the image */
+.profile-image {
+    width: 50%; /* Adjust the percentage to make the image smaller */
+    border-radius: 8px; /* Optional: Add a border-radius for a rounded appearance */
+    margin-left: 20px; /* Optional: Add some space between the image and text */
+}
+
+/* Style for the text */
+.about-content p {
+    flex: 1; /* Allow the text to take up the remaining space */
+}
+
+/* Style for the image */
+.profile-image {
+    max-width: 24%; /* Make sure the image doesn't exceed its container */
+    border-radius: 10px; /* Optional: Add a border-radius for a rounded appearance */
+    margin-bottom: 20px; /* Optional: Add some space below the image */
+    padding: 20px;
 }
 
 /* Add a background color for the active link */
@@ -22,7 +73,33 @@ body {
     color: #007bff; /* Text color for better visibility */
 }
 
+/* Style for the button */
+.email-button {
+    text-align: center;
+    margin-top: 20px; /* Add some space above the button */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
 
 footer {
     text-align: center;
+    position: absolute;
+    width: 100%;
+    /* margin-top: auto; */
+    bottom: 0%; /* Push the footer to the bottom */
 }
