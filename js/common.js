@@ -10,9 +10,13 @@ function includeNavbar() {
             <a class="nav-item nav-link" href="contact.html">Contact</a>
             <a class="nav-item nav-link" href="fun.html">Fun Stuff</a>
         </nav>
-    
+    `);
+}
+
+function includeFooter() {
+    document.write('
         <footer>
             <p>&copy; 2023 Michelle Lim</p>
         </footer>
-    `);
+    ');
 }
