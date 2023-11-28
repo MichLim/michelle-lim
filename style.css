@@ -122,6 +122,49 @@ section {
     border-radius: 8px; /* Optional: Add rounded corners for a nicer look */
 }
 
+/* Project Grid Styling */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+    gap: 20px; /* Adjust the gap between projects */
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.project h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project:hover img {
+    transform: scale(1.05);
+}
+
+.project:hover h3 {
+    opacity: 1;
+}
+
+/* Add more styling for project details as needed */
+.project-details {
+    display: none;
+}
 
 
 /* this doesn't want to move to the center :) */
