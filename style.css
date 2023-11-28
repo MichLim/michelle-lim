@@ -132,6 +132,7 @@ section {
 .project {
     position: relative;
     overflow: hidden;
+    padding: 15px;
 }
 
 .project img {
