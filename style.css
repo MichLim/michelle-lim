@@ -126,13 +126,18 @@ section {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
-    gap: 20px; /* Adjust the gap between projects */
+    gap: 50px; /* Adjust the gap between projects */
+
+    border-radius: 10px; /* Add rounded corners to the project grid */
+    overflow: hidden; /* Hide overflow to ensure rounded corners are visible */
 }
 
 .project {
     position: relative;
     overflow: hidden;
-    padding: 15px;
+    padding: 0px;
+    border-radius: 10px; /* Add rounded corners to each project */
+
 }
 
 .project img {
@@ -167,6 +172,14 @@ section {
     display: none;
 }
 
+/* Add the following rule to change the background color on click */
+.project.clicked {
+    background-color: #ececec; /* Set the background color when clicked */
+}
+
+.project.clicked img {
+    filter: grayscale(70%); /* Adjust the percentage to control the level of desaturation */
+}
 
 /* this doesn't want to move to the center :) */
 .footer {

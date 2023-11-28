@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
             // Toggle the visibility of project details
             const details = this.querySelector('.project-details');
             details.style.display = details.style.display === 'block' ? 'none' : 'block';
-        });
+
+            // Toggle the clicked class for background color change
+            this.classList.toggle('clicked');        });
     });
 });
